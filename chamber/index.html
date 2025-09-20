@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | Mexico Chamber of Commerce </title>
+    <meta name="description" content="Chamber of Commerce Directory Page">
+    <meta name="author" content="Yamsir Hernandez Perez">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Directory Page">
+    <meta property="og:url" content="https://750mlvodka.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Chamber of Commerce Directory Page">
+    <meta property="og:image" content="https://github.com/750mlVodka/wdd231/blob/main/chamber/images/church_logo.png?raw=true">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="750mlvodka.github.io">
+    <meta property="twitter:url" content="https://750mlvodka.github.io/wdd231/chamber/directory.html">
+    <meta name="twitter:title" content="Chamber Directory">
+    <meta name="twitter:description" content="Chamber of Commerce Directory Page">
+    <meta name="twitter:image" content="https://github.com/750mlVodka/wdd231/blob/main/chamber/images/church_logo.png?raw=true">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+    <script src="/wdd231/scripts/date.js"></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Logo" width="120"/>
+            <h1>Chamber of Commerce</h1>
+            <p>Home</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+            <button class="dark-mode-toggle">🌓</button>
+        </nav>
+        <div class="mobile-nav">
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero_image.webp" alt="Hero Image">
+            <a href="#" class="cta">Keynote Tickets</a>
+        </div>
+
+        <h1>Home</h1>
+
+        <section class="info-grid">
+            <div class="events">
+                <h3>Events</h3>
+                <ul>
+                    <li>Chamber Meeting <br>Jun 2, 2025, 9:00 a.m.</li>
+                    <li>Conference <br> Jun 4, 2025, 10:00 a.m.</li>
+                </ul>
+            </div>
+
+            <div class="current-weather">
+                <h3>Weather</h3>
+                    <h4 id="town"></h4>
+                    <img id="graphic" src="in-js" alt="in-js">
+                    <p id="temperature"></p>
+                    <p id="description"></p>
+                    <p id="humidity"></p>
+            </div>
+            <div class="weather-forecast">
+                <h3>Forecast</h3>
+                <div id="forecast"></div>
+            </div>
+        </section>
+
+        <div class="spotlights">
+            <div class="spot1"></div>
+            <div class="spot2"></div>
+            <div class="spot3"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p><strong>Mexico Chamber of Commerce</strong></p>
+            <p>Av P. de la Reforma<br />Ciudad de Mexico, 06600</p>
+            <p>info@mexico.org</p>
+            <p>(550) 555-2300</p>
+        </div>
+        <div class="footer-right">
+            <div class="social-icons">
+                <a href="#">YouTube</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <p>WDD231 Class Project<br />Yamsir Hernandez Perez</p>
+            <p>&copy; <span id="currentyear"></span> Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
