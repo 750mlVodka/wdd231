@@ -8,10 +8,14 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     color: var(--text-color);
     background-color: var(--bg-light);
+}
+
+h1, h2, h3, span {
+    font-family: "Roboto Mono", monospace;
 }
 
 /* Header */
