@@ -4,6 +4,16 @@ header {
     background-color: #f9f9f9;
 }
 
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+}
+
 #cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -29,4 +39,5 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: #f9f9f9;
+    font-family: 'Montserrat', sans-serif;
 }
