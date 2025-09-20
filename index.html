@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/courses.js"></script>
+    <script src="https://kit.fontawesome.com/653120ec51.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo-link">
+                <img src="images/code.svg" alt="logo" class="logo-svg">
+            </a>
+            <span class="logo-name">Yamsir Hernandez</span>
+            <button class="menu-toggle" >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <nav id="main-nav" class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="main-title">Home</h1>
+
+        <div class="top-sections">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium placeat, optio omnis dolores tempora tenetur cupiditate quia alias, consequatur, aliquam doloremque. Ea ex voluptatibus illum perferendis dolorum eaque reiciendis aliquid?</p>
+            </section>
+    
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Student Photo" class="profile-photo">
+            </section>
+        </div>
+
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-filters">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+                <button class="filter-btn" data-filter="CSE">CSE Courses</button>
+            </div>
+            <div id="courses-container" class="courses-container">
+                </div>
+            <p class="credits-total">Total Credits: <span id="total-credits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/750mlVodka"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yamsirhp/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/yamsir_/"><i class="fab fa-instagram"></i></a>
+            <p>&copy; <span id="currentYear"></span> Yamsir Hernandez, Morelos, Mexico</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
