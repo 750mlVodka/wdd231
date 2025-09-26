@@ -1,429 +1,77 @@
 :root {
-    --primary-color: #146CCD;
-    --secondary-color: #f0f0f0;
-    --font-color: #333;
-    --font-family: 'Montserrat', sans-serif;
-    --header-font-family: 'Roboto', sans-serif;
-}
-
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Roboto', sans-serif
-}
-
-p,
-span,
-a,
-li,
-button {
-    font-family: 'Montserrat', sans-serif;
+    --primary-color: #13385f;
+    --secondary-color: #6c757d;
+    --text-color: #333;
+    --text-contrast: #fff;
+    --bg-light: #f8f8f8;
+    --bg-dark: #7fa0c0;
 }
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: var(--secondary-color);
-    flex-wrap: wrap;
-}
-
-.logo img {
-    width: 120px;
-    height: auto;
+    background: var(--bg-dark);
+    color: var(--text-contrast);
 }
 
 .logo {
     display: flex;
     align-items: center;
+    gap: 1.5rem;
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
     gap: 1rem;
 }
 
-.nav-links a,
-.nav-links button {
-    margin: 0 0.5rem;
+nav a {
     text-decoration: none;
-    color: black;
-}
-
-.mobile-nav {
-    display: none;
-}
-
-main {
-    padding: 0 6rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Hero CSS */
-
-.hero {
-    position: relative;
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-}
-
-.cta {
-    position: absolute;
-    bottom: 20px;
-    left: 80%;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--text-contrast);
     font-weight: bold;
-    padding: 0.8rem 1.2rem;
-    text-decoration: none;
-    border-radius: 8px;
 }
 
-.info-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
-    ;
+nav a.active {
+    text-decoration: underline;
 }
 
-.info-grid h3 {
-    text-align: justify;
-    color: var(--secondary-color);
-    background-color: var(--font-color);
-    padding: 1rem 0 0 0;
+nav a:hover {
+    color: var(--primary-color);
 }
 
-.info-grid div {
-    border-bottom: solid var(--font-color);
-    background-color: var(--secondary-color);
-}
-
-/* Weather */
-
-.current-weather {
-    text-align: center;
-}
-
-.weather-forecast {
-    text-align: center;
-}
-
-/* Spots */
-
-.spotlights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-}
-
-.spotlights h3 {
-    text-align: center;
-    ;
-}
-
-.spotlights div {
-    padding: 1rem;
-    background-color: var(--secondary-color);
-}
-
-.spot-content img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-.spot-content {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    border-top: 1px solid var(--secondary-color);
-}
-
-.spot-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.box {
-    background-color: var(--secondary-color);
-    padding: 1rem;
-}
-
-.business-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.card {
-    background-color: var(--secondary-color);
-    padding: 1rem;
-    text-align: center;
-    border: 1px solid var(--secondary-color);
-}
-
-.card img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-}
-
-.membership-1 {
-    background-color: lightgreen;
-    width: 100%;
-}
-
-.membership-2 {
-    background-color: lightblue;
-    width: 100%;
-
-}
-
-.membership-3 {
-    background-color: gold;
-    width: 100%;
-
-}
-
-footer {
-    background-color: var(--secondary-color);
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-left,
-.footer-right {
-    flex: 1 1 300px;
-    margin: 1rem 0;
-}
-
-.social-icons a {
-    margin-right: 1rem;
+#menuBtn {
+    display: none;
     font-size: 1.5rem;
-}
-
-#allplaces div {
-    grid-template-areas:
-        "photo name"
-        "photo description"
-        "photo location";
-}
-
-#allplaces div h2 {
-    margin: 1rem 10px;
-    grid-area: name;
-}
-
-#allplaces div img {
-    width: 100%;
-    grid-area: photo;
-}
-
-#allplaces div p {
-    margin: 1rem 10px;
-    grid-area: description;
-}
-
-#allplaces div address {
-    margin: 1px 10px;
-    grid-area: location;
-}
-
-#allplaces div button {
-    margin: 16px 4rem;
-    padding: 0.5rem 1rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background: none;
     border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    grid-area: button;
+    color: var(--text-contrast);
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
-    .nav-links {
+    nav ul {
         display: none;
         flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-        margin-bottom: 2rem;
-        animation: fadeIn 0.5s ease-in-out;
-    }
-
-    .nav-links a {
-        margin-bottom: 1rem;
+        background: var(--bg-dark);
+        position: absolute;
+        top: 100px;
+        right: 5px;
         padding: 1rem;
-        border-bottom: 1px solid var(--secondary-color);
     }
 
-    .nav-links a:hover {
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
-        border-radius: 6px;
+    nav ul.open {
+        display: flex;
     }
 
-    .mobile-nav {
+    #menuBtn {
         display: block;
     }
-
-    .info-grid,
-    .business-cards {
-        grid-template-columns: 1fr;
-    }
-
-    header {
-        flex-direction: column;
-    }
-
-    .hero img {
-        max-height: 150px;
-        object-fit: cover;
-        width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #allplaces div {
-        margin: 1rem 8px;
-        border: 1px solid #999;
-        background-color: #eee;
-        border-radius: 8px;
-        overflow: hidden;
-
-        display: grid;
-        grid-template-areas:
-            "name"
-            "photo"
-            "description"
-            "location"
-            "button"
-        ;
-    }
-
-    #allplaces div h2 {
-        margin: 1rem 10px;
-        grid-area: name;
-    }
-
-    #allplaces div img {
-        width: 100%;
-        grid-area: photo;
-    }
-
-    #allplaces div p {
-        margin: 1rem 10px;
-        grid-area: description;
-    }
-
-    #allplaces div address {
-        margin: 1px 10px;
-        grid-area: location;
-    }
-}
-
-@media (min-width: 769px) {
-    .nav-links {
-        display: flex !important;
-        flex-direction: row;
-        gap: 1rem;
-        align-items: center;
-        margin-bottom: 0;
-        animation: none;
-    }
-
-    .nav-links a:hover {
-        background-color: transparent;
-        color: #007bff;
-        font-weight: bold;
-    }
-
-        #allplaces div {
-        margin: 1rem 8px;
-        border: 1px solid #999;
-        background-color: #eee;
-        border-radius: 8px;
-        overflow: hidden;
-
-        display: grid;
-        grid-template-areas:
-            "name name"
-            "photo description"
-            "photo location"
-            "button button"
-        ;
-    }
-
-    #allplaces {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-        #allplaces div h2 {
-        margin: 1rem 10px;
-        grid-area: name;
-    }
-
-    #allplaces div img {
-        width: 200px;
-        grid-area: photo;
-    }
-
-    #allplaces div p {
-        margin: 1rem 10px;
-        grid-area: description;
-    }
-
-    #allplaces div address {
-        margin: 1px 10px;
-        grid-area: location;
-    }
-
-    #allplaces div img:hover {
-        transform: scale(1.05);
-        transition: transform 0.3s ease-in-out;
-        filter: brightness(1.1);
-    }
-}
-
-.view-toggle {
-    margin-top: 1rem;
-    text-align: right;
-}
-
-.view-toggle button {
-    margin-left: 0.5rem;
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-.list-view {
-    display: flex;
-    flex-direction: column;
-}
-
-.list-view .card {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
-}
-
-.list-view .card img {
-    width: 100px;
-    margin-right: 1rem;
-    background-color: #ccc;
 }

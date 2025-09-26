@@ -1,0 +1,82 @@
+[
+    {
+        "name": "TechNova Solutions",
+        "address": "123 Innovation Ave, Springfield",
+        "phone": "555-1010",
+        "website": "https://technova.com",
+        "image": "technova.png",
+        "membership": 3
+    },
+    {
+        "name": "GreenLeaf Organics",
+        "address": "45 Garden St, Rivertown",
+        "phone": "555-2020",
+        "website": "https://greenleaforganics.com",
+        "image": "greenleaf.png",
+        "membership": 2
+    },
+    {
+        "name": "BrightFuture Education",
+        "address": "789 Knowledge Rd, Hillview",
+        "phone": "555-3030",
+        "website": "https://brightfutureedu.org",
+        "image": "brightfuture.png",
+        "membership": 1
+    },
+    {
+        "name": "Skyline Architects",
+        "address": "12 Tower Blvd, Metropolis",
+        "phone": "555-4040",
+        "website": "https://skylinearch.com",
+        "image": "skyline.png",
+        "membership": 2
+    },
+    {
+        "name": "Rapid Logistics",
+        "address": "88 Cargo Ln, Port City",
+        "phone": "555-5050",
+        "website": "https://rapidlogistics.com",
+        "image": "rapid.png",
+        "membership": 3
+    },
+    {
+        "name": "BlueWave Fitness",
+        "address": "200 Ocean Dr, Seaside",
+        "phone": "555-6060",
+        "website": "https://bluewavefit.com",
+        "image": "bluewave.png",
+        "membership": 1
+    },
+    {
+        "name": "Golden Harvest Bakery",
+        "address": "55 Bread St, Oldtown",
+        "phone": "555-7070",
+        "website": "https://goldenharvestbakery.com",
+        "image": "bakery.png",
+        "membership": 3
+    },
+    {
+        "name": "EcoRide Bikes",
+        "address": "321 Cycle Ave, Green City",
+        "phone": "555-8080",
+        "website": "https://ecoridebikes.com",
+        "image": "ecoride.png",
+        "membership": 2
+    },
+    {
+        "name": "Silverline Jewelry",
+        "address": "999 Market St, Downtown",
+        "phone": "555-9090",
+        "website": "https://silverlinejewels.com",
+        "image": "silverline.png",
+        "membership": 1
+    },
+    {
+        "name": "Luna Tech Repairs",
+        "address": "456 Moonlight Rd, Nightvale",
+        "phone": "555-1111",
+        "website": "https://lunatechrepair.com",
+        "image": "lunatech.png",
+        "membership": 2
+    }
+]

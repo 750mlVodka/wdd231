@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory</title>
+    <meta name="description" content="Directory Chamber of Commerce">
+    <meta name="author" content="Yamsir Hernandez">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+
+    <!-- JavaScript -->
+    <script src="/scripts/script.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Chamber Logo">
+            <h1>Chamber of Commerce Directory</h1>
+        </div>
+        <nav>
+            <button id="menuBtn" aria-label="Toggle Menu">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Member Directory</h2>
+        <div class="view-buttons">
+            <button id="gridBtn">Grid View</button>
+            <button id="listBtn">List View</button>
+        </div>
+        <div id="cards" class="grid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Yamsir Hernandez | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
