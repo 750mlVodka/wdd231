@@ -55,6 +55,41 @@ nav a:hover {
     color: var(--text-contrast);
 }
 
+/* Cards */
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#cards.list {
+    display: block;
+}
+
+.card {
+    border: 1px solid var(--bg-dark);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: var(--bg-dark);
+}
+
+.card img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.view-buttons {
+    margin: 1rem;
+    text-align: center;
+}
+
+.view-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     nav ul {
