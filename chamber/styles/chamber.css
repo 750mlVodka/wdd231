@@ -71,10 +71,11 @@ nav a:hover {
     padding: 1rem;
     border-radius: 8px;
     background: var(--bg-dark);
+    text-align: center;
 }
 
 .card img {
-    max-width: 80%;
+    max-width: 120px;
     height: auto;
     display: block;
     margin: 0 auto 1rem;
