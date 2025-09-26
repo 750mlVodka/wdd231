@@ -7,6 +7,14 @@
     --bg-dark: #7fa0c0;
 }
 
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-light);
+    color: var(--text-color);
+}
+
 header {
     display: flex;
     justify-content: space-between;
