@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Home Page</title>
+    <meta name="description" content="Directory Chamber of Commerce">
+    <meta name="author" content="Yamsir Hernandez">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://750mlvodka.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chamber of Commerce Home Page">
+    <meta property="og:description" content="Home Page Chamber of Commerce">
+    <meta property="og:image" content="https://750mlvodka.github.io/wdd231/images/profile.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="750mlvodka.github.io">
+    <meta property="twitter:url" content="https://750mlvodka.github.io/wdd231/chamber/index.html">
+    <meta name="twitter:title" content="Chamber of Commerce Home Page">
+    <meta name="twitter:description" content="Home Page Chamber of Commerce">
+    <meta name="twitter:image" content="https://750mlvodka.github.io/wdd231/images/profile.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Chamber Logo">
+            <span class="main-title">Chamber of Commerce Home Page</span>
+        </div>
+        <nav>
+            <button id="menuBtn" aria-label="Toggle Menu">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.webp" alt="hero image">
+            <a href="join.html" class="cta-btn">Keynote Tickets</a>
+        </section>
+
+        <h1>Home</h1>
+        <section class="home-sections">
+
+            <div class="card-section events">
+                <h2>Events</h2>
+                <p>Upcoming events will be listed here.</p>
+            </div>
+
+            <div class="card-section weather">
+                <h2>Current Weather</h2>
+                <span>Img</span>
+                <ul>
+                    <li>75°F</li>
+                    <li>Party Cloudy</li>
+                    <li>High: 85°</li>
+                    <li>Low: 52°</li>
+                    <li>Humidity: 34%</li>
+                    <li>Sunrise: 7:30am</li>
+                    <li>Sunset: 9:59pm</li>
+                </ul>
+            </div>
+
+            <div class="card-section forecast">
+                <h2>Weather Forecast</h2>
+                <ul>
+                    <li>Today: <strong>90°F</strong></li>
+                    <li>Wednesday: <strong>89°F</strong></li>
+                    <li>Thursday: <strong>68°F</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="spotlights">
+            <article class="spotlight">
+                <h3>Business Name</h3>
+                <p class="tagline">Business Tag Line</p>
+                <img src="https://avatar.iran.liara.run/public/boy?username=1" alt="Business logo">
+                <p>Email: info@gmail.com</p>
+                <p>Phone: 800-555-1234</p>
+                <p>URL: mybusiness.com</p>
+            </article>
+
+            <article class="spotlight">
+                <h3>Business Name</h3>
+                <p class="tagline">Business Tag Line</p>
+                <img src="https://avatar.iran.liara.run/public/boy?username=2" alt="Business logo">
+                <p>Email: info@gmail.com</p>
+                <p>Phone: 800-555-1234</p>
+                <p>URL: mybusiness.com</p>
+            </article>
+
+            <article class="spotlight">
+                <h3>Business Name</h3>
+                <p class="tagline">Business Tag Line</p>
+                <img src="https://avatar.iran.liara.run/public/boy?username=3" alt="Business logo">
+                <p>Email: info@gmail.com</p>
+                <p>Phone: 800-555-1234</p>
+                <p>URL: mybusiness.com</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Yamsir Hernandez | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -68,6 +68,77 @@ nav a:hover {
     color: var(--text-contrast);
 }
 
+/* Hero */
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.cta-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: var(--text-contrast);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Home Sections */
+.home-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card-section {
+    background: var(--bg-dark);
+    color: var(--text-contrast);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.card-section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Spotlights */
+.spotlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.spotlight {
+    background: var(--bg-light);
+    padding: 1rem;
+    border: 1px solid var(--bg-dark);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.spotlight img {
+    max-width: 100px;
+    height: auto;
+    margin: 0.5rem auto;
+    display: block;
+}
+
 /* Cards */
 #cards.grid {
     display: grid;
@@ -123,4 +194,13 @@ nav a:hover {
     #menuBtn {
         display: block;
     }
+
+    .home-sections {
+        grid-template-columns: 1fr;
+    }
+
+    .spotlights {
+        grid-template-columns: 1fr;
+    }
 }
+
