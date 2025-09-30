@@ -117,6 +117,7 @@ nav a:hover {
 
 .card-section ul {
     list-style: none;
+    padding: 0;
 }
 
 .card-section img {
