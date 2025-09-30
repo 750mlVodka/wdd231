@@ -44,6 +44,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
+    z-index: 1;
 }
 
 nav a {
