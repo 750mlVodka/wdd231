@@ -1,4 +1,4 @@
-const weatherSection = document.querySelector('.weather ul')
+const weatherSection = document.querySelector('.weather')
 const forecastSection = document.querySelector('.forecast ul')
 
 const apiKey = 'a9d27d957846390b0fb35a4a9c48bf56';
@@ -19,6 +19,7 @@ async function getWeather() {
         const high = Math.round(data.main.temp_max);
         const low = Math.round(data.main.temp_min);
         const humidity = data.main.humidity;
+        const icon = data.weather[0].icon;
 
         // Sunrise & Sunset
         const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString("en-US", {
@@ -31,6 +32,10 @@ async function getWeather() {
         });
 
         weatherSection.innerHTML = `
+                        <h2>Current Weather</h2>
+
+            <img src=" https://openweathermap.org/img/wn/${icon}@2x.png">
+            <ul>
             <li><strong>${temp}</strong>°F</li>
             <li>${desc}</li>
             <li>High: ${high}°</li>
@@ -38,6 +43,7 @@ async function getWeather() {
             <li>Humidity: ${humidity}%</li>
             <li>Sunrise: ${sunrise}</li>
             <li>Sunset: ${sunset}</li>
+            </ul>
     `;
 
         // === Forecast ===
@@ -55,7 +61,8 @@ async function getWeather() {
             const date = new Date(day.dt_txt);
             const weekday = date.toLocaleDateString("en-US", { weekday: "long" });
             const temp = Math.round(day.main.temp);
-            return `<li>${weekday}: <strong>${temp}°F</strong></li>`;
+            return `
+                <li>${weekday}: <strong>${temp}°F</strong></li>`;
         }).join("");
 
     } catch (err) {

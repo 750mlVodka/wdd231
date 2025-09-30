@@ -109,6 +109,18 @@ nav a:hover {
     color: var(--text-contrast);
     padding: 1rem;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.card-section ul {
+    list-style: none;
+}
+
+.card-section img {
+    max-width: fit-content;
 }
 
 .card-section h2 {
@@ -176,6 +188,11 @@ nav a:hover {
     padding: 0.5rem 1rem;
 }
 
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     nav ul {
@@ -203,5 +220,18 @@ nav a:hover {
     .spotlights {
         grid-template-columns: 1fr;
     }
-}
 
+    .hero {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        max-height: 120px;
+        object-fit: cover;
+        display: block;
+    }
+}
