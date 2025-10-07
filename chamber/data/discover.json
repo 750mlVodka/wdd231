@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Zócalo Square",
+        "address": "Plaza de la Constitución, Historic Center",
+        "description": "The city's central plaza, hosting cultural events, protests, and stunning colonial architecture.",
+        "image": "zocalo.webp",
+        "url": "https://cdmx.gob.mx/zonacentro"
+    },
+    {
+        "title": "Chapultepec Park",
+        "address": "Bosque de Chapultepec I Secc, Miguel Hidalgo, CDMX",
+        "description": "One of the largest urban parks in the world, featuring museums, lakes, and green spaces.",
+        "image": "park.webp",
+        "url": "https://chapultepec.cdmx.gob.mx"
+    },
+    {
+        "title": "National Museum of Anthropology",
+        "address": "Av. Paseo de la Reforma & Gandhi, Polanco",
+        "description": "Showcases Mexico’s pre-Hispanic cultures with iconic artifacts like the Aztec Sun Stone.",
+        "image": "nma.webp",
+        "url": "https://mna.inah.gob.mx"
+    },
+    {
+        "title": "Mercado Roma",
+        "address": "Calle Querétaro 225, Roma Norte, CDMX",
+        "description": "Trendy gourmet food market with local chefs offering tacos, desserts, craft beer, and more.",
+        "image": "mercado.webp",
+        "url": "https://cdmx.gob.mx/mercadoroma"
+    },
+    {
+        "title": "Torre Latinoamericana Viewpoint",
+        "address": "Eje Central 2, Historic Center",
+        "description": "Panoramic views of the city from one of its most iconic skyscrapers.",
+        "image": "torre.webp",
+        "url": "https://torrelatino.com"
+    },
+    {
+        "title": "Teotihuacán Pyramids",
+        "address": "San Juan Teotihuacán, Estado de México",
+        "description": "Ancient Mesoamerican city with the Pyramid of the Sun and Moon; explore on foot or with a guide.",
+        "image": "pyramid.webp",
+        "url": "https://mexico.com"
+    },
+    {
+        "title": "Trajineras Xochimilco",
+        "address": "Embarcadero Fernando Celada, Xochimilco, CDMX",
+        "description": "Colorful boat rides along ancient canals with music, snacks, and traditional celebrations.",
+        "image": "trajineras.webp",
+        "url": "https://cdmx.gob.mx/romacondesa"
+    },
+    {
+        "title": "Museo Soumaya",
+        "address": "Blvd. Miguel de Cervantes Saavedra 303, Granada, CDMX",
+        "description": "Modern art museum housing works by Rodin, Dalí, and more in a futuristic silver building.",
+        "image": "soumaya.webp",
+        "url": "https://soumaya.org.mx"
+    }
+]
