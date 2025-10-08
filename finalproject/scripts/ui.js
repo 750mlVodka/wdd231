@@ -1,11 +1,11 @@
-// ui.js - UI components and modal management
 import { isInWishlist } from './wishlist.js';
 
-// Create game card HTML using template literals
 export function createGameCard(game) {
     const inWishlist = isInWishlist(game.id);
     const wishlistBtnClass = inWishlist ? 'btn btn--primary' : 'btn btn--ghost';
-    const wishlistBtnText = inWishlist ? 'Added' : 'Add';
+    const wishlistBtnText = inWishlist
+        ? '<i class="fa-solid fa-heart"></i>'
+        : '<i class="fa-regular fa-heart"></i>';
 
     return `
         <article class="card">
@@ -20,7 +20,7 @@ export function createGameCard(game) {
                 <p><strong>Rating:</strong> ${game.rating || 'N/A'} / 5</p>
                 <p><strong>Genres:</strong> ${game.genres?.map(g => g.name).join(', ') || 'N/A'}</p>
                 <div class="actions">
-                    <button class="btn btn--ghost" data-game-id="${game.id}">View Details</button>
+                    <button class="btn btn--ghost" data-game-id="${game.id}"> Details</button>
                     <button class="${wishlistBtnClass}" data-wishlist-id="${game.id}">${wishlistBtnText}</button>
                 </div>
             </div>

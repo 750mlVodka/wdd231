@@ -157,12 +157,12 @@ async function loadGameDetails(gameId) {
 function toggleWishlist(game, button) {
     if (isInWishlist(game.id)) {
         removeFromWishlist(game.id);
-        button.textContent = '<i class="fa-regular fa-heart"></i> Add';
+        button.innerHTML = '<i class="fa-regular fa-heart"></i>';
         button.classList.remove('btn--primary');
         button.classList.add('btn--ghost');
     } else {
         addToWishlist(game);
-        button.textContent = '<i class="fa-solid fa-heart"></i> Added';
+        button.innerHTML = '<i class="fa-solid fa-heart"></i>';
         button.classList.remove('btn--ghost');
         button.classList.add('btn--primary');
     }

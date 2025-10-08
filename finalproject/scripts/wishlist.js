@@ -1,10 +1,8 @@
-// wishlist.js - Wishlist management with localStorage
 import { createGameCard } from './ui.js';
 import { loadGameDetails } from './main.js';
 
 const STORAGE_KEY = 'videogame_wishlist';
 
-// Initialize wishlist page if exists
 document.addEventListener('DOMContentLoaded', () => {
     const wishlistGrid = document.getElementById('wishListGrid');
     if (wishlistGrid) {
@@ -36,7 +34,6 @@ function saveWishlist(wishlist) {
 export function addToWishlist(game) {
     const wishlist = getWishlist();
 
-    // Check if already exists
     if (!wishlist.some(item => item.id === game.id)) {
         wishlist.push({
             id: game.id,
@@ -56,7 +53,6 @@ export function removeFromWishlist(gameId) {
     const filtered = wishlist.filter(game => game.id !== gameId);
     saveWishlist(filtered);
 
-    // Refresh wishlist page if we're on it
     const wishlistGrid = document.getElementById('wishListGrid');
     if (wishlistGrid) {
         displayWishlist();
@@ -83,7 +79,6 @@ function displayWishlist() {
 
     container.innerHTML = wishlist.map(game => createGameCard(game)).join('');
 
-    // Attach event listeners
     wishlist.forEach(game => {
         const viewBtn = container.querySelector(`[data-game-id="${game.id}"]`);
         const removeBtn = container.querySelector(`[data-wishlist-id="${game.id}"]`);
