@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoGame Explorer — Trending</title>
+
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/ui.js" defer></script>
+    <script type="module" src="scripts/wishlist.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img src="images/logo.svg" alt="VideoGame Explorer logo" class="logo" />
+            <span class="site-title">VideoGame Explorer</span>
+        </div>
+        <nav>
+            <button id="menuBtn" aria-expanded="false" aria-controls="primaryNav">☰</button>
+            <ul id="primaryNav" class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trending.html" class="active">Trending</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-small">
+            <h1>Trending Games</h1>
+            <p>Popular titles from the RAWG database.</p>
+        </section>
+
+        <section id="trendingGrid" class="results" aria-live="polite">
+            <!-- trending cards here -->
+        </section>
+
+        <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal-content" role="document" tabindex="-1">
+                <button class="modal-close" aria-label="Close details">&times;</button>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> VideoGame Explorer — Cuautla, México</p>
+        <p><a href="" target="_blank" rel="">V</a></p>
+    </footer>
+
+</body>
+
+</html>

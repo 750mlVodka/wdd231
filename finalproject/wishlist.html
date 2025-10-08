@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoGame Explorer — Wishlist</title>
+
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/ui.js" defer></script>
+    <script type="module" src="scripts/wishlist.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img src="images/logo.svg" alt="VideoGame Explorer logo" class="logo" />
+            <span class="site-title">VideoGame Explorer</span>
+        </div>
+        <nav>
+            <button id="menuBtn" aria-expanded="false" aria-controls="primaryNav">☰</button>
+            <ul id="primaryNav" class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="wishlist.html" class="active">Wishlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-small">
+            <h1>Your Wishlist</h1>
+            <p>Games you saved for later.</p>
+        </section>
+
+        <section id="wishListGrid" class="results" aria-live="polite">
+            <!-- favorites here -->
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> VideoGame Explorer — Cuautla, México</p>
+        <p><a href="" target="_blank" rel="">V</a></p>
+    </footer>
+
+</body>
+
+</html>

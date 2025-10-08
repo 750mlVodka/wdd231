@@ -1,0 +1,19 @@
+finalproject/
+├── index.html              ← Home / Search page
+├── trending.html           ← Trending games
+├── wishlist.html           ← User favorites
+├── styles/
+│   ├── normalize.css
+│   └── main.css
+├── scripts/
+│   ├── main.js             ← handles menu, storage
+│   ├── api.js              ← fetch RAWG data
+│   ├── ui.js               ← render games/cards
+│   ├── wishlist.js         ← favorites logic
+│   └── trending.js         ← trending fetch/render
+├── data/
+│   └── placeholder.json    ← fallback local sample
+├── images/
+│   └── logo.svg
+└── assets/
+    └── favicon.ico
