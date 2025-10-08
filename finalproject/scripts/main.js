@@ -1,29 +1,24 @@
-// main.js - Core functionality and search
 import { createGameCard, openModal, closeModal } from './ui.js';
 import { addToWishlist, removeFromWishlist, isInWishlist } from './wishlist.js';
 
 const API_KEY = 'fa15ac885d114a8a891fcb203c0b9e9b';
 const BASE_URL = 'https://api.rawg.io/api';
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => {
     setupEventListeners();
     updateFooter();
 
-    // Load trending if on trending page
     if (document.getElementById('trendingGrid')) {
         loadTrending();
     }
 });
 
 function setupEventListeners() {
-    // Search form
     const searchForm = document.getElementById('searchForm');
     if (searchForm) {
         searchForm.addEventListener('submit', handleSearch);
     }
 
-    // Modal close
     const modal = document.getElementById('modal');
     const closeBtn = modal?.querySelector('.modal-close');
 
@@ -41,7 +36,6 @@ function setupEventListeners() {
         });
     }
 
-    // Mobile menu
     const menuBtn = document.getElementById('menuBtn');
     const nav = document.getElementById('primaryNav');
 
@@ -163,18 +157,17 @@ async function loadGameDetails(gameId) {
 function toggleWishlist(game, button) {
     if (isInWishlist(game.id)) {
         removeFromWishlist(game.id);
-        button.textContent = '+ Add';
+        button.textContent = '<i class="fa-regular fa-heart"></i> Add';
         button.classList.remove('btn--primary');
         button.classList.add('btn--ghost');
     } else {
         addToWishlist(game);
-        button.textContent = '✓ Added';
+        button.textContent = '<i class="fa-solid fa-heart"></i> Added';
         button.classList.remove('btn--ghost');
         button.classList.add('btn--primary');
     }
 }
 
-// Helper: Format date as YYYY-MM-DD
 function formatDate(date) {
     return date.toISOString().split('T')[0];
 }
@@ -187,5 +180,4 @@ function updateFooter() {
     }
 }
 
-// Export for use in other modules
 export { loadGameDetails, toggleWishlist };
