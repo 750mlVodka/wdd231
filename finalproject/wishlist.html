@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoGame Explorer — Wishlist</title>
 
-    <link rel="icon" href="assets/favicon.ico" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="VideoGame Explorer - Wishlist" />
+    <meta property="author" content="Yamsir Hernandez">
+    <meta property="og:description" content="Wishlist of your favorites video games" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/750mlVodka/wdd231/refs/heads/main/finalproject/images/hero1.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://750mlvodka.github.io/wdd231/finalproject/wishlist.html" />
+
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 
     <script type="module" src="scripts/main.js" defer></script>
     <script type="module" src="scripts/ui.js" defer></script>
@@ -38,13 +47,13 @@
     </header>
 
     <main class="container">
-        <section class="hero-small">
+        <section>
             <h1>Your Wishlist</h1>
             <p>Games you saved for later.</p>
         </section>
 
         <section id="wishListGrid" class="results" aria-live="polite">
-            <!-- favorites here -->
+            <!-- favorites -->
         </section>
     </main>
 

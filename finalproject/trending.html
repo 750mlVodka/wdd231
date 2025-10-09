@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoGame Explorer — Trending</title>
 
-    <link rel="icon" href="assets/favicon.ico" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="VideoGame Explorer - Trending" />
+    <meta property="author" content="Yamsir Hernandez">
+    <meta property="og:description" content="Trending video ganes from RAWG database." />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/750mlVodka/wdd231/refs/heads/main/finalproject/images/hero1.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://750mlvodka.github.io/wdd231/finalproject/trending.html" />
+
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 
     <script type="module" src="scripts/main.js" defer></script>
     <script type="module" src="scripts/ui.js" defer></script>
@@ -38,13 +47,13 @@
     </header>
 
     <main class="container">
-        <section class="hero-small">
+        <section>
             <h1>Trending Games</h1>
             <p>Popular titles from the RAWG database.</p>
         </section>
 
         <section id="trendingGrid" class="results" aria-live="polite">
-            <!-- trending cards here -->
+            <!-- trending cards -->
         </section>
 
         <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
