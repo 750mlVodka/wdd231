@@ -8,17 +8,20 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="VideoGame Explorer" />
+    <meta property="author" content="Yamsir Hernandez">
     <meta property="og:description" content="Search and explore video games from RAWG database." />
-    <meta property="og:image" content="images/logo.svg" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/750mlVodka/wdd231/refs/heads/main/finalproject/images/logo.svg" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://750mlvodka.github.io/wdd231/finalproject/" />
 
     <link rel="icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 
-    <script type="module" src="scripts/main.js" defer></script>
-    <script type="module" src="scripts/ui.js" defer></script>
-    <script type="module" src="scripts/wishlist.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/ui.js" ></script>
+    <script type="module" src="scripts/wishlist.js"></script>
     <script src="https://kit.fontawesome.com/653120ec51.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +50,7 @@
         <section class="search-section">
             <h1>Search Games</h1>
             <form id="searchForm" aria-label="Search games">
-                <label for="q" class="visually-hidden">Search games</label>
+                <label for="q"></label>
                 <input id="q" name="q" type="search" placeholder="Search games by title..." autocomplete="off"
                     required />
                 <button id="searchBtn" type="submit">Search</button>
@@ -55,7 +58,7 @@
         </section>
 
         <section id="results" class="results" aria-live="polite">
-            <!-- Game cards here -->
+            <!-- Game cards -->
         </section>
 
         <!-- Modal for game details -->
